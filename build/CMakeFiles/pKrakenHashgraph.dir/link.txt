@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/pKrakenHashgraph.dir/KrakenHashgraph.cpp.o CMakeFiles/pKrakenHashgraph.dir/KrakenHashgraph_Info.cpp.o CMakeFiles/pKrakenHashgraph.dir/main.cpp.o  -o pKrakenHashgraph  -lapputil -lmbutil -lm -lpthread 

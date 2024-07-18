@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pKrakenHashgraph config block
+
+ProcessConfig = pKrakenHashgraph
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

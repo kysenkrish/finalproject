@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/rrc/Downloads/pKrakenHashgraph/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/pKrakenHashgraph.dir/KrakenHashgraph.cpp.o -c /home/rrc/Downloads/pKrakenHashgraph/KrakenHashgraph.cpp",
+  "file": "/home/rrc/Downloads/pKrakenHashgraph/KrakenHashgraph.cpp"
+},
+{
+  "directory": "/home/rrc/Downloads/pKrakenHashgraph/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/pKrakenHashgraph.dir/KrakenHashgraph_Info.cpp.o -c /home/rrc/Downloads/pKrakenHashgraph/KrakenHashgraph_Info.cpp",
+  "file": "/home/rrc/Downloads/pKrakenHashgraph/KrakenHashgraph_Info.cpp"
+},
+{
+  "directory": "/home/rrc/Downloads/pKrakenHashgraph/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/pKrakenHashgraph.dir/main.cpp.o -c /home/rrc/Downloads/pKrakenHashgraph/main.cpp",
+  "file": "/home/rrc/Downloads/pKrakenHashgraph/main.cpp"
+}
+]
