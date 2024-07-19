@@ -25,7 +25,7 @@ bool KrakenHashgraph::OnNewMail(MOOSMSG_LIST &NewMail)
     string sval = msg.GetString();
 
     // Write key-value pair to file
-    outputFile << "'" << key << "' = '" << sval << "'" << endl;
+    // outputFile << "'" << key << "' = '" << sval << "'" << endl;
 
     bool handled = false;
     if(key == "NODE_REPORT")
@@ -34,25 +34,33 @@ bool KrakenHashgraph::OnNewMail(MOOSMSG_LIST &NewMail)
       handled = onNodeReportLocal(sval);
     else if(key == "DB_UPTIME"){
       dbtime = msg.GetDouble();
+
+      outputFile << "'" << key << "' = '" << sval << "'" << endl;
+
       handled = true;
     }
     //else if(key == "DOA"){
     //  doa = msg.GetDouble();
+    //  outputFile << "'" << key << "' = '" << sval << "'" << endl;
     //  handled = true;
     //}
     else if(key == "NAV_X"){
       nav_x = msg.GetDouble();
+
+      outputFile << "'" << key << "' = '" << sval << "'" << endl;
+
       handled = true;
     }
     else if(key == "NAV_Y"){
       nav_y = msg.GetDouble();
+
+      outputFile << "'" << key << "' = '" << sval << "'" << endl;
+      
       handled = true;
     }
     if(!handled)
       reportRunWarning("Unhandled Mail: '" + key + "'");
   }
-
-  outputFile << "\"" + std::to_string(nav_x) + "," + std::to_string(nav_y) + "," + std::to_string(dbtime) + "\"" << endl;
 
   // outputFile will automatically close when going out of scope
 
