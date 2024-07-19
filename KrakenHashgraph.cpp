@@ -36,10 +36,10 @@ bool KrakenHashgraph::OnNewMail(MOOSMSG_LIST &NewMail)
       dbtime = msg.GetDouble();
       handled = true;
     }
-    else if(key == "DOA"){
-      doa = msg.GetDouble();
-      handled = true;
-    }
+    //else if(key == "DOA"){
+    //  doa = msg.GetDouble();
+    //  handled = true;
+    //}
     else if(key == "NAV_X"){
       nav_x = msg.GetDouble();
       handled = true;
@@ -51,6 +51,8 @@ bool KrakenHashgraph::OnNewMail(MOOSMSG_LIST &NewMail)
     if(!handled)
       reportRunWarning("Unhandled Mail: '" + key + "'");
   }
+
+  outputFile << "\"" + std::to_string(nav_x) + "," + std::to_string(nav_y) + "," + std::to_string(dbtime) + "\"" << endl;
 
   // outputFile will automatically close when going out of scope
 
